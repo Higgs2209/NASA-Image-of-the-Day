@@ -26,6 +26,10 @@ def get_image():
         image = file.write(image_response.content)
         return image
 
+def get_title():
+   title = apod_object_parser.get_title(response)
+   return title
+
 
 print(image_url)
 
